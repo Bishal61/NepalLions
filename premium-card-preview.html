@@ -1,0 +1,302 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+    /* Premium Pagination Styling */
+    .bhutan-swiper-pagination.swiper-pagination-bullets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .bhutan-swiper-pagination .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: #cbd5e1; /* Slate-300 */
+        opacity: 1;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 99px;
+    }
+
+    .bhutan-swiper-pagination .swiper-pagination-bullet-active {
+        width: 32px; /* Stretches the bullet */
+        background: #B87333; /* Copper color */
+    }
+
+    /* Hover Effects for Cards */
+    .package-card {
+        padding: 10px 0; /* Prevents shadow clipping */
+    }
+    
+    .package-card:hover .card-inner {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navigation button disabled state */
+    .bhutan-swiper-prev.swiper-button-disabled,
+    .bhutan-swiper-next.swiper-button-disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+</style>
+
+  <!-- Bhutan Tour Packages Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-copper font-bold uppercase tracking-widest text-sm">Discover</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-mountain-blue mt-2">
+                    <span class="text-copper">Bhutan</span> Tour Packages
+                </h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Experience the Land of the Thunder Dragon</p>
+            </div>
+
+            <div class="bhutan-packages-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Bhutan Package 1: Paro Taktsang -->
+                    <div class="package-card swiper-slide">
+                        <div class="card-inner bg-snow-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500">
+                            <div class="card-image-wrap relative h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1553856622-d1b352e24e02?w=600&h=400&fit=crop" alt="Paro Taktsang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            <div class="px-6 py-5">
+                                <h3 class="text-xl font-display font-bold text-mountain-blue leading-tight">Paro Taktsang</h3>
+                                <div class="flex items-center gap-5 mt-3 text-gray-600 text-sm">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        5 Days
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                        3,120m
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-200/50">
+                                    <span class="text-2xl font-display font-bold text-copper">$1,299</span>
+                                    <a href="#" class="hero-btn-fill px-5 py-2.5 font-display font-semibold text-sm uppercase rounded-lg">
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bhutan Package 2: Punakha Valley -->
+                    <div class="package-card swiper-slide">
+                        <div class="card-inner bg-snow-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500">
+                            <div class="card-image-wrap relative h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1591591281168-1f7c55d5e9e8?w=600&h=400&fit=crop" alt="Punakha Valley" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            <div class="px-6 py-5">
+                                <h3 class="text-xl font-display font-bold text-mountain-blue leading-tight">Punakha Valley</h3>
+                                <div class="flex items-center gap-5 mt-3 text-gray-600 text-sm">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        6 Days
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                        1,300m
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-200/50">
+                                    <span class="text-2xl font-display font-bold text-copper">$1,499</span>
+                                    <a href="#" class="hero-btn-fill px-5 py-2.5 font-display font-semibold text-sm uppercase rounded-lg">
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bhutan Package 3: Thimphu Explorer -->
+                    <div class="package-card swiper-slide">
+                        <div class="card-inner bg-snow-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500">
+                            <div class="card-image-wrap relative h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?w=600&h=400&fit=crop" alt="Thimphu" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            <div class="px-6 py-5">
+                                <h3 class="text-xl font-display font-bold text-mountain-blue leading-tight">Thimphu Explorer</h3>
+                                <div class="flex items-center gap-5 mt-3 text-gray-600 text-sm">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        4 Days
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                        2,300m
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-200/50">
+                                    <span class="text-2xl font-display font-bold text-copper">$999</span>
+                                    <a href="#" class="hero-btn-fill px-5 py-2.5 font-display font-semibold text-sm uppercase rounded-lg">
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bhutan Package 4: Bumthang Valley -->
+                    <div class="package-card swiper-slide">
+                        <div class="card-inner bg-snow-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500">
+                            <div class="card-image-wrap relative h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&h=400&fit=crop" alt="Bumthang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            <div class="px-6 py-5">
+                                <h3 class="text-xl font-display font-bold text-mountain-blue leading-tight">Bumthang Valley</h3>
+                                <div class="flex items-center gap-5 mt-3 text-gray-600 text-sm">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        7 Days
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                        2,800m
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-200/50">
+                                    <span class="text-2xl font-display font-bold text-copper">$1,799</span>
+                                    <a href="#" class="hero-btn-fill px-5 py-2.5 font-display font-semibold text-sm uppercase rounded-lg">
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bhutan Package 5: Tiger's Nest -->
+                    <div class="package-card swiper-slide">
+                        <div class="card-inner bg-snow-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500">
+                            <div class="card-image-wrap relative h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1624867204838-3c0aa6d8a11b?w=600&h=400&fit=crop" alt="Tiger's Nest" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            <div class="px-6 py-5">
+                                <h3 class="text-xl font-display font-bold text-mountain-blue leading-tight">Tiger's Nest</h3>
+                                <div class="flex items-center gap-5 mt-3 text-gray-600 text-sm">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        3 Days
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                        3,120m
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-200/50">
+                                    <span class="text-2xl font-display font-bold text-copper">$799</span>
+                                    <a href="#" class="hero-btn-fill px-5 py-2.5 font-display font-semibold text-sm uppercase rounded-lg">
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bhutan Package 6: Druk Path Trek -->
+                    <div class="package-card swiper-slide">
+                        <div class="card-inner bg-snow-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500">
+                            <div class="card-image-wrap relative h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&h=400&fit=crop" alt="Druk Path" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            <div class="px-6 py-5">
+                                <h3 class="text-xl font-display font-bold text-mountain-blue leading-tight">Druk Path Trek</h3>
+                                <div class="flex items-center gap-5 mt-3 text-gray-600 text-sm">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        8 Days
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <svg class="icon-premium w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                        4,200m
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-200/50">
+                                    <span class="text-2xl font-display font-bold text-copper">$2,199</span>
+                                    <a href="#" class="hero-btn-fill px-5 py-2.5 font-display font-semibold text-sm uppercase rounded-lg">
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation & Pagination -->
+            <div class="flex justify-center items-center mt-8">
+                <button class="bhutan-swiper-prev w-12 h-12 rounded-full bg-mountain-blue text-white flex items-center justify-center hover:bg-copper transition-all duration-300 hover:scale-105 flex-shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                
+                <div class="bhutan-swiper-nav-container mx-6 bg-white rounded-full px-6 py-3 shadow-md">
+                    <div class="bhutan-swiper-pagination flex items-center gap-2"></div>
+                </div>
+                
+                <button class="bhutan-swiper-next w-12 h-12 rounded-full bg-mountain-blue text-white flex items-center justify-center hover:bg-copper transition-all duration-300 hover:scale-105 flex-shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const swiper = new Swiper('.bhutan-packages-swiper', {
+            // Core logic
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            grabCursor: true,
+            speed: 800, // Smooth, slow slide speed
+            
+            // Premium transitions
+            watchSlidesProgress: true,
+            
+            // Responsive Breakpoints
+            breakpoints: {
+                // Desktop: 3 cards
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                // Tablet: 2 cards
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // Mobile: 1.2 cards (shows a peek of the next)
+                480: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                }
+            },
+
+            // Navigation Arrows
+            navigation: {
+                nextEl: '.bhutan-swiper-next',
+                prevEl: '.bhutan-swiper-prev',
+            },
+
+            // Custom Pagination
+            pagination: {
+                el: '.bhutan-swiper-pagination',
+                clickable: true,
+            },
+
+            // Autoplay (optional - remove if not needed)
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+        });
+    });
+</script>
